@@ -7,7 +7,7 @@ public class Bird implements FlyingAnimals,OtherAnimals {
 
 	@Override
 	public String doSing(String type,String Sound) {
-		if(type.equals("butterfly")){
+		if(type.equals("1")){
 			System.out.println("butterFly won't sing");
 			return "false";
 		}
