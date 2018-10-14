@@ -1,26 +1,27 @@
 package com.jf.classes;
 
-import com.jf.FlyingAnimals;
+import com.jf.SwimmingAnimals;
 
-public class Parrot implements FlyingAnimals {
+public class Fish implements SwimmingAnimals {
 
 	@Override
 	public String doSing(String type, String Sound) {
-		// TODO Auto-generated method stub
-		if(type.equals("1"))
-		{
+		// 
+		if(type.equals("1")){
 			System.out.println("This animal should not be singing.....");
 			return "false";
 		}
-		else{
+		else {
 			System.out.println(Sound);
 			return "true";
 		}
+
 	}
 
 	@Override
-	public String doFly() {
-		System.out.println("Parrot is Flying...");
+	public String doSwim() {
+		// TODO Auto-generated method stub
+		System.out.println("Fish are Swiming...");
 		return "true";
 	}
 

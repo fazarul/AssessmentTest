@@ -33,6 +33,26 @@ public class RunnerClass {
 		parrot.doSing("2", "Meow");
 		parrot.doSing("2", "Cock-a-doodle-doo");
 		parrot.doFly();
+	
+		// Fish
+		Fish fish = new Fish();
+		fish.doSing("1", "No Sound");
+		fish.doSwim();
+		
+		Shark shark = new Shark();
+		shark.doSing("1", "No Sound");
+		shark.doSwim();
+		shark.doOtherActivities();
+		
+		ClownFish clown = new ClownFish();
+		clown.doSing("1", "No Sound");
+		clown.doSwim();
+		clown.doOtherActivities();
+		
+		Dolphin dolphin = new Dolphin();
+		dolphin.doSing("1", "No Sound");
+		dolphin.doSwim();
+		dolphin.doOtherActivities();
 		
 	}
 
