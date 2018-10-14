@@ -6,32 +6,32 @@ import com.jf.SwimmingAnimals;
 public class Duck implements SwimmingAnimals,OtherAnimals {
 
 	@Override
-	public String doSing(String type, String Sound) {
+	public int doSing(String type, String Sound) {
 		
 		if(type.equals("1")){
 			System.out.println("This animal should not be singing.....");
-			return "false";
+			return 0;
 		}
 		else {
 			System.out.println(Sound);
-			return "true";
+			return 1;
 		}
 		
 	}
 
 	@Override
-	public String doSwim() {
+	public int doSwim() {
 		// TODO Auto-generated method stub
 		System.out.println("Duck are Swimming..");
-		return "true";
+		return 1;
 	}
 
 	@Override
-	public String doWalk() {
+	public int doWalk() {
 		// TODO Auto-generated method stub
 
 		System.out.println("Duck are Walking...");
-		return "true";
+		return 1;
 	}
 
 }

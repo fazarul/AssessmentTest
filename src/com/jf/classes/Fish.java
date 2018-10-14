@@ -5,24 +5,24 @@ import com.jf.SwimmingAnimals;
 public class Fish implements SwimmingAnimals {
 
 	@Override
-	public String doSing(String type, String Sound) {
+	public int doSing(String type, String Sound) {
 		// 
 		if(type.equals("1")){
 			System.out.println("This animal should not be singing.....");
-			return "false";
+			return 0;
 		}
 		else {
 			System.out.println(Sound);
-			return "true";
+			return 1;
 		}
 
 	}
 
 	@Override
-	public String doSwim() {
+	public int doSwim() {
 		// TODO Auto-generated method stub
 		System.out.println("Fish are Swiming...");
-		return "true";
+		return 1;
 	}
 
 	

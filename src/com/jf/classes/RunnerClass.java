@@ -3,64 +3,77 @@ package com.jf.classes;
 
 public class RunnerClass {
 	
+    static int  flyCount=0;
+	static int walkCount=0;
+	static int singCount=0;
+	static int swimCount=0;
+	
+	
 	public static void main(String a[]){
 		
 		//Bird
 		Bird bird = new Bird();
-		bird.doFly();
-		bird.doWalk();
-		bird.doSing("2", "Booo Booo Booo");
+		flyCount += bird.doFly();
+		walkCount += bird.doWalk();
+		singCount += bird.doSing("2", "Booo Booo Booo");
 		//Duck
 		Duck duck = new Duck();
-		duck.doSing("2", "Quack Quack");
-		duck.doSwim();
-		duck.doWalk();
+		singCount += duck.doSing("2", "Quack Quack");
+		swimCount += duck.doSwim();
+		walkCount += duck.doWalk();
 		
 	//  Chicken
 		Chicken chicken = new Chicken();
-		chicken.doSing("2", "Cluck Cluck");
-		chicken.doWalk();
+		singCount += chicken.doSing("2", "Cluck Cluck");
+		walkCount += chicken.doWalk();
 		
 	// Rooster
 		Rooster rooster = new Rooster();
-		rooster.doSing("2", "Cock-a-doodle-doo");
-		rooster.doWalk();
+		singCount += rooster.doSing("2", "Cock-a-doodle-doo");
+		walkCount += rooster.doWalk();
 	
 	
 		// Parrot
 		Parrot parrot = new Parrot();
-		parrot.doSing("2", "Woof,woof");
-		parrot.doSing("2", "Meow");
-		parrot.doSing("2", "Cock-a-doodle-doo");
-		parrot.doFly();
+		singCount += parrot.doSing("2", "Woof,woof");
+		singCount += parrot.doSing("2", "Meow");
+		singCount += parrot.doSing("2", "Cock-a-doodle-doo");
+		flyCount += parrot.doFly();
 	
 		// Fish
 		Fish fish = new Fish();
-		fish.doSing("1", "No Sound");
-		fish.doSwim();
+		singCount += fish.doSing("1", "No Sound");
+		swimCount += fish.doSwim();
 		
 		Shark shark = new Shark();
-		shark.doSing("1", "No Sound");
-		shark.doSwim();
+		singCount += shark.doSing("1", "No Sound");
+		swimCount += shark.doSwim();
 		shark.doOtherActivities();
 		
 		ClownFish clown = new ClownFish();
-		clown.doSing("1", "No Sound");
-		clown.doSwim();
+		singCount += clown.doSing("1", "No Sound");
+		swimCount += clown.doSwim();
 		clown.doOtherActivities();
 		
 		Dolphin dolphin = new Dolphin();
-		dolphin.doSing("1", "No Sound");
-		dolphin.doSwim();
+		singCount += dolphin.doSing("1", "No Sound");
+		swimCount += dolphin.doSwim();
 		dolphin.doOtherActivities();
 		
 		Butterfly butterfly = new Butterfly();
-		butterfly.doSing("1", "No Sound");
-		butterfly.doFly();
+		singCount += butterfly.doSing("1", "No Sound");
+		flyCount += butterfly.doFly();
 		
 		CatterPiller catter = new CatterPiller();
-		catter.doSing("1", "No Sound");
-		catter.doWalk();
+		singCount += catter.doSing("1", "No Sound");
+		walkCount += catter.doWalk();
+		
+		
+	System.out.println("how many of these animals can fly?"+  flyCount);
+	System.out.println("how many of these animals can walk?"+   walkCount);
+	System.out.println("how many of these animals can sing?"+  singCount);
+	System.out.println("how many of these animals can swim?" + swimCount);
+	
 		
 	}
 

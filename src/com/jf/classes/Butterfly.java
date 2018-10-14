@@ -5,24 +5,24 @@ import com.jf.FlyingAnimals;
 public class Butterfly implements FlyingAnimals{
 
 	@Override
-	public String doSing(String type, String Sound) {
+	public int doSing(String type, String Sound) {
 		
 		if(type.equals("1"))
 		{
 			System.out.println("This animal should not be singing.....");
-			return "false";
+			return 0;
 		}
 		else{
 			System.out.println(Sound);
-			return "true";
+			return 1;
 		}
 		
 	}
 
 	@Override
-	public String doFly() {
+	public int doFly() {
 		System.out.println("Butterfly is Flying...");
-		return "true";
+		return 1;
 	}
 
 

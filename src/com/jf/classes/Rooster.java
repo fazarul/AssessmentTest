@@ -9,25 +9,25 @@ import com.jf.SwimmingAnimals;
 public class Rooster implements OtherAnimals {
 
 	@Override
-	public String doSing(String type, String Sound) {
+	public int doSing(String type, String Sound) {
 		
 		if(type.equals("1")){
 			System.out.println("This animal should not be singing.....");
-			return "false";
+			return 0;
 		}
 		else {
 			System.out.println(Sound);
-			return "true";
+			return 1;
 		}
 		
 	}
 
 
 	@Override
-	public String doWalk() {
+	public int doWalk() {
 	
 		System.out.println("Rooster are Walking...");
-		return "true";
+		return 1;
 	}
 
 }

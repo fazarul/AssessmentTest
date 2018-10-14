@@ -2,5 +2,5 @@ package com.jf;
 
 public interface SwimmingAnimals extends Animal{
 
-	public abstract String doSwim();
+	public abstract int doSwim();
 }

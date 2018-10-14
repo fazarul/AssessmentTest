@@ -6,29 +6,29 @@ import com.jf.OtherAnimals;
 public class Bird implements FlyingAnimals,OtherAnimals {
 
 	@Override
-	public String doSing(String type,String Sound) {
+	public int doSing(String type,String Sound) {
 		if(type.equals("1")){
 			System.out.println("butterFly won't sing");
-			return "false";
+			return 0;
 		}
 		else{
 			System.out.println(Sound);
-			return "true";
+			return 1;
 		}
 	}
 
 	@Override
-	public String doFly() {
+	public int doFly() {
 		// TODO Auto-generated method stub
 		System.out.println("Birds are Flying");
-		return "true";
+		return 1;
 	}
 
 	@Override
-	public String doWalk() {
+	public int doWalk() {
 		// TODO Auto-generated method stub
 		System.out.println("Birds are Walking...");
-		return "true";
+		return 1;
 	}
 
 }
