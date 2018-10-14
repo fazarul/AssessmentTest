@@ -54,6 +54,14 @@ public class RunnerClass {
 		dolphin.doSwim();
 		dolphin.doOtherActivities();
 		
+		Butterfly butterfly = new Butterfly();
+		butterfly.doSing("1", "No Sound");
+		butterfly.doFly();
+		
+		CatterPiller catter = new CatterPiller();
+		catter.doSing("1", "No Sound");
+		catter.doWalk();
+		
 	}
 
 }
